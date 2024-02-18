@@ -9,7 +9,7 @@ class MultiHeadAttention(nn.Module):
     def __init__(self, model_dim, nheads):
         super(MultiHeadAttention, self).__init__()
 
-        assert model_dim % nheads == 0, "model dim must be divisible by nheads!"
+        assert model_dim % nheads == 0, "my_model dim must be divisible by nheads!"
 
         self.model_dim = model_dim
         self.nheads = nheads
