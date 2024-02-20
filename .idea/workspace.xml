@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80994dc0-ec13-4efb-95a1-6d045ce4804e" name="Changes" comment="add transformer module">
+    <list default="true" id="80994dc0-ec13-4efb-95a1-6d045ce4804e" name="Changes" comment="add positional encoder">
+      <change beforePath="$PROJECT_DIR$/.idea/text_generation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/text_generation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_generator/model/positional_encoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_generator/model/positional_encoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_generator/model/transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_generator/model/transformer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2cXRkDdwjD29Bt2PoccWg6m0Yk2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -35,8 +46,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
-    <configuration name="generate_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Noy\PycharmProjects\text_generation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.trainer">
+    <configuration name="preprocess_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="text_generation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -48,7 +64,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text_generator/generate_text.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text_generator/preprocess_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -57,9 +73,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="trainer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Noy\PycharmProjects\text_generation\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/text_generator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text_generator/trainer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.preprocess_data" />
+      <item itemvalue="Python.trainer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.generate_text" />
+        <item itemvalue="Python.trainer" />
+        <item itemvalue="Python.preprocess_data" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +156,77 @@
       <option name="project" value="LOCAL" />
       <updated>1708259809689</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="storage my own code">
+      <created>1708268807313</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708268807313</updated>
+    </task>
+    <task id="LOCAL-00008" summary="something has changed here">
+      <created>1708268817649</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708268817649</updated>
+    </task>
+    <task id="LOCAL-00009" summary="remove old model">
+      <created>1708332967447</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708332967447</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add ignores">
+      <created>1708333058463</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708333058463</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update transformer model">
+      <created>1708333071066</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708333071066</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add ignores">
+      <created>1708333189132</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708333189132</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add ignores">
+      <created>1708333205891</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708333205891</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update transformer model">
+      <created>1708333239964</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708333239964</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add ignores">
+      <created>1708333283012</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708333283012</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add positional encoder">
+      <created>1708333357716</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708333357716</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +239,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
@@ -134,6 +247,12 @@
     <MESSAGE value="add encoder module" />
     <MESSAGE value="add decoder module" />
     <MESSAGE value="add transformer module" />
-    <option name="LAST_COMMIT_MESSAGE" value="add transformer module" />
+    <MESSAGE value="storage my own code" />
+    <MESSAGE value="something has changed here" />
+    <MESSAGE value="remove old model" />
+    <MESSAGE value="update transformer model" />
+    <MESSAGE value="add ignores" />
+    <MESSAGE value="add positional encoder" />
+    <option name="LAST_COMMIT_MESSAGE" value="add positional encoder" />
   </component>
 </project>
